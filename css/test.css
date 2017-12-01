@@ -1,0 +1,56 @@
+
+body {
+  background-color: #FFFFF8;
+  color: #0A1827;
+}
+
+#wrapper {
+  width: 60%;
+  height: 80%;
+  margin: 50 auto 0 auto;
+}
+
+#img-div {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#image {
+  width: 100%;
+}
+
+#q {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+#q-mark {
+  color: #497678;
+  margin: 10 10 0 40;
+}
+
+#statement {
+  margin: auto 10 4 10;
+  color: #2C3E50;
+  font-size: 25px;
+}
+
+#choices{
+  margin: 20;
+}
+
+.choice {
+  text-align: center;
+  margin: 15 auto;
+  width: 80%;
+  color: #3D6F85;
+  font-size: 20px;
+  border: solid;
+  border-radius: 10px;
+}
+
+.choice:hover{
+  color: #2C3E50;
+}

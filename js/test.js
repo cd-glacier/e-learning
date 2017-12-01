@@ -1,13 +1,12 @@
 const init = () => {
 
-  if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null) {
+  if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null || localStorage.getItem("progress") > 20 || localStorage.getItem("progress") < 0) {
     localStorage.setItem("progress", 0);
-    localStorage.setItem("correct", 0);
-  } else if (localStorage.getItem("progress") > 20 || localStorage.getItem("progress") < 0) {
-    localStorage.setItem("progress", 0);
-    localStorage.setItem("correct", 0);
   }
   const progress = parseInt(localStorage.getItem("progress"));
+
+  localStorage.setItem("correct", false);
+  localStorage.setItem("correctNum", 0);
 
   document.getElementById("image").src = questions[progress].img;
   document.getElementById("statement").textContent = questions[progress].statement;
@@ -21,14 +20,14 @@ const choice = (choiced) => {
   const progress = parseInt(localStorage.getItem("progress"));
 
   if (questions[progress].answer === choiced) {
-    alert("正解");
     const correct = parseInt(localStorage.getItem("correct"));
-    localStorage.setItem("correct", correct + 1);
+    localStorage.setItem("correctNum", correct + 1);
+    localStorage.setItem("correct", true);
   } else {
-    alert("不正解");
+    localStorage.setItem("correct", false);
   }
-
   localStorage.setItem("progress", progress + 1);
+  location.href = "answer.html";
 };
 
 const questions = [
