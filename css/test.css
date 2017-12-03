@@ -57,4 +57,5 @@ body {
 
 .choice:hover{
   color: #2C3E50;
+  cursor: pointer;
 }

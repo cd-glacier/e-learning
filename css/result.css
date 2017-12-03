@@ -1,0 +1,58 @@
+body {
+  background-color: #FFFFF8;
+  color: #0A1827;
+}
+
+#wrapper {
+  width: 60%;
+  height: 80%;
+  margin: 10% auto 0 auto;
+}
+
+#result-div {
+  text-align: center;
+}
+
+#result-text {
+  font-size: 60px;
+  color: #0A1827;
+}
+
+#result-label {
+  margin: 15 auto;
+  width: 128px;
+  display: flex;
+  flex-direction: row;
+}
+
+#numer {
+  margin-bottom: 20;
+  font-size: 60px;
+  color: #3D6F85;
+}
+
+#divide {
+  font-size: 60px;
+}
+
+#denom {
+  margin-top: 20;
+  font-size: 45px;
+  color: #0A1827;
+}
+
+#return-button {
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  color: #3D6F85;
+  font-size: 20px;
+  border: solid;
+  border-radius: 10px;
+}
+
+#return-button:hover {
+  color: #2C3E50;
+  cursor: pointer;
+}
+

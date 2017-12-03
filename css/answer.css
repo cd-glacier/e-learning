@@ -38,4 +38,5 @@ body {
 
 #next-button:hover{
   color: #2C3E50;
+  cursor: pointer;
 }
