@@ -1,0 +1,34 @@
+
+body {
+  background-color: #FFFFF8;
+  color: #0A1827;
+}
+
+#wrapper {
+  width: 60%;
+  height: 80%;
+  margin: 10% auto 0 auto;
+}
+
+#title {
+  color: #0A1827;
+  text-align: center;
+  font-size: 50px;
+}
+
+#elements {
+  margin-top: 30px; 
+}
+
+.element {
+  color: #3D6F85;
+  font-size: 30px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color: #3D6F85;
+}
+
+#fee {
+  margin: 0 auto;
+  width: 300px;
+}

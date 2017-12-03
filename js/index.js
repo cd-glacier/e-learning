@@ -2,12 +2,15 @@ const move = (e) => {
   if (e === "outline") {
     location.href = "outline.html";
   } else if (e === "pretest") {
+    localStorage.setItem("questions", JSON.stringify(preQuestions));
     location.href = "pretest.html";
   } else if (e === "test") {
     localStorage.setItem("questions", JSON.stringify(questions));
     location.href = "test.html";
   }
 };
+
+const preQuestions = questions;
 
 const questions = [
   {
