@@ -20,7 +20,7 @@ body {
 
 #result-label {
   margin: 15 auto;
-  width: 128px;
+  width: 170px;
   display: flex;
   flex-direction: row;
 }
