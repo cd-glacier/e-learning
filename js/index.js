@@ -1,3 +1,12 @@
+const init = () => {
+  document.getElementById("test").classList.add("disable");
+
+  const finishPreTest = JSON.parse(localStorage.getItem("finishPreTest"));
+  if (finishPreTest) {
+    document.getElementById("test").classList.remove("disable");
+  }
+}
+
 const move = (e) => {
   if (e === "outline") {
     location.href = "outline.html";
@@ -10,7 +19,6 @@ const move = (e) => {
   }
 };
 
-const preQuestions = questions;
 
 const questions = [
   {
@@ -136,3 +144,5 @@ const questions = [
     img: "img/gazou20.png",
   }
 ];
+
+const preQuestions = questions;

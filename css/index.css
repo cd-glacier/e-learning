@@ -29,3 +29,12 @@ body {
   color: #2C3E50;
   cursor: pointer;
 }
+
+.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.disable:hover {
+  cursor: not-allowed;
+}
