@@ -1,9 +1,11 @@
 const QUESTION_NUM = 20;
 
 const init = () => {
+  localStorage.setItem("questions", JSON.stringify(questions));
 
   if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null || localStorage.getItem("progress") >= QUESTION_NUM || localStorage.getItem("progress") < 0) {
     localStorage.setItem("progress", 0);
+    localStorage.setItem("finishPreTest", false);
   }
   const progress = parseInt(localStorage.getItem("progress"));
   console.log(progress);

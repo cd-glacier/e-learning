@@ -13,5 +13,17 @@ const init = () => {
 }
 
 const clickNextButton = () => {
+  const progress = parseInt(localStorage.getItem("progress"));
+  const questions = JSON.parse(localStorage.getItem("questions"));
+
+  if (progress === 20) {
+    localStorage.setItem("finishPreTest", true);
+    location.href = "result.html";
+    return false;
+  }
+
   location.href = "test.html";
-}
+};
+
+const done = () => {
+};
