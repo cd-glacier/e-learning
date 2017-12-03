@@ -1,12 +1,38 @@
 <html>
-  <header>
+  <head>
     <title>道路交通標識テスト</title>
-  </header>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+  </head>
 
-  <body>
-    <h1>プレテスト</h1>
+  <body onload="init()">
+    <div id="wrapper">
+
+      <div id="question">
+        <div id="num"></div>
+
+        <div id="img-div">
+          <img id="image" src=""> 
+        </div>
+
+        <div id="q">
+          <h1 id="q-mark">?</h1>
+          <div id="statement"></div>
+        </div>
+
+        <div id="choices">
+          <div id="choice0" class="choice" onclick="choice(0)"></div>
+          <div id="choice1" class="choice" onclick="choice(1)"></div>
+          <div id="choice2" class="choice" onclick="choice(2)"></div>
+          <div id="choice3" class="choice" onclick="choice(3)"></div>
+        </div>
+      </div>
+
+    </div>
   </body>
+
+  <script type="text/javascript" src="js/test.js"></script>
 </html>
+
 
 
 
