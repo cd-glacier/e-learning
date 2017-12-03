@@ -1,5 +1,7 @@
 const init = () => {
   const correct = JSON.parse(localStorage.getItem("correct"));
+  const progress = parseInt(localStorage.getItem("progress"));
+  const questions = JSON.parse(localStorage.getItem("questions"));
 
   console.log(correct);
   var ok = document.getElementById("ok");
@@ -9,7 +11,10 @@ const init = () => {
     ok.textContent = "不正解";
   }
 
-  document.getElementById("commentary-content").textContent = "かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜かいせつ〜";
+
+  if (questions[progress].commentary != undefined && questions[progress.commentary != null]) {
+    document.getElementById("commentary-content").textContent = questions[progress].commentary;
+  }
 }
 
 const clickNextButton = () => {
