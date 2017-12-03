@@ -1,13 +1,17 @@
+const QUESTION_NUM = 20;
+
 const init = () => {
 
-  if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null || localStorage.getItem("progress") > 20 || localStorage.getItem("progress") < 0) {
+  if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null || localStorage.getItem("progress") >= QUESTION_NUM || localStorage.getItem("progress") < 0) {
     localStorage.setItem("progress", 0);
   }
   const progress = parseInt(localStorage.getItem("progress"));
+  console.log(progress);
 
   localStorage.setItem("correct", false);
   localStorage.setItem("correctNum", 0);
 
+  document.getElementById("num").textContent = "第" + (progress + 1) + "問";
   document.getElementById("image").src = questions[progress].img;
   document.getElementById("statement").textContent = questions[progress].statement;
   document.getElementById("choice0").textContent = questions[progress].choices[0];
@@ -119,6 +123,7 @@ const questions = [
   },
   {
     statement: "標識の意味をして正しいものは下のうちどれか。",
+    choices: ["この標識は車のみ進入可能であることを表している。", "この標識は自転車を降りてのみ通行可能であることを表している。", "この標識は自転車および歩行者専用道路であることを表している。", "この標識は優先道路であることを表している。"],
     answer: 2,
     img: "img/gazou15.png",
   },
