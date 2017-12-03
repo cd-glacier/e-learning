@@ -5,13 +5,13 @@ const init = () => {
 
   if (localStorage.getItem("progress") == undefined || localStorage.getItem("progress") == null || localStorage.getItem("progress") >= QUESTION_NUM || localStorage.getItem("progress") < 0) {
     localStorage.setItem("progress", 0);
+    localStorage.setItem("correctNum", 0);
     localStorage.setItem("finishPreTest", false);
   }
   const progress = parseInt(localStorage.getItem("progress"));
   console.log(progress);
 
   localStorage.setItem("correct", false);
-  localStorage.setItem("correctNum", 0);
 
   document.getElementById("num").textContent = "第" + (progress + 1) + "問";
   document.getElementById("image").src = questions[progress].img;
@@ -26,8 +26,8 @@ const choice = (choiced) => {
   const progress = parseInt(localStorage.getItem("progress"));
 
   if (questions[progress].answer === choiced) {
-    const correct = parseInt(localStorage.getItem("correct"));
-    localStorage.setItem("correctNum", correct + 1);
+    const correctNum = parseInt(localStorage.getItem("correctNum"));
+    localStorage.setItem("correctNum", correctNum + 1);
     localStorage.setItem("correct", true);
   } else {
     localStorage.setItem("correct", false);

@@ -1,16 +1,26 @@
 <html>
-  <header>
+  <head>
     <title>道路交通標識テスト</title>
-  </header>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
   <body>
-    <h1>道路交通標識テスト</h1>
-    <ul>
-      <li><a href="outline.html">概要</a></li>
-      <li><a href="pretest.html">プレテスト</a></li>
-      <li><a href="test.html">テスト</a></li>
-    </ul>
+    <div id="wrapper">
+
+      <div id="title">道路交通標識テスト</div>
+      <div id="outline" class="element" onclick="move('outline')">
+        概要
+      </div>
+      <div id="pretest" class="element" onclick="move('pretest')">
+        プレテスト
+      </div>
+      <div id="test" class="element" onclick="move('test')">
+        テスト
+      </div>
+
+    </div>
   </body>
+
+  <script type="text/javascript" src="js/index.js"></script>
 </html>
 
 

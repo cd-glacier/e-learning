@@ -29,6 +29,3 @@ const clickNextButton = () => {
 
   location.href = "test.html";
 };
-
-const done = () => {
-};
