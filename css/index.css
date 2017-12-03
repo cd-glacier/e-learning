@@ -10,6 +10,7 @@ body {
 }
 
 #title {
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 50px;
   color: #0A1827;
   text-align: center;
@@ -35,6 +36,3 @@ body {
   opacity: 0.5;
 }
 
-.disable:hover {
-  cursor: not-allowed;
-}
