@@ -7,6 +7,15 @@ body {
   width: 65%;
   height: 80%;
   margin: 10% auto 0 auto;
+}
+
+#title {
+  font-size: 50px;
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #0A1827;
+}
+
+#content {
   display: flex;
   flex-wrap: wrap;
 }

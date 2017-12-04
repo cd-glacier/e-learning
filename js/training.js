@@ -14,6 +14,6 @@ const init = () => {
     imgStatement.textContent = e.explain;
     imgDiv.appendChild(imgStatement);
 
-    document.getElementById("wrapper").appendChild(imgDiv);
+    document.getElementById("content").appendChild(imgDiv);
   });
 }
