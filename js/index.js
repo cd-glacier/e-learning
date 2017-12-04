@@ -1,3 +1,7 @@
+const shuffle = () => {
+  return Math.random() - .5
+};
+
 const init = () => {
   document.getElementById("test").classList.add("disable");
 
@@ -11,10 +15,10 @@ const move = (e) => {
   if (e === "outline") {
     location.href = "outline.html";
   } else if (e === "pretest") {
-    localStorage.setItem("questions", JSON.stringify(preQuestions));
+    localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
     location.href = "pretest.html";
   } else if (e === "test") {
-    localStorage.setItem("questions", JSON.stringify(questions));
+    localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
     location.href = "test.html";
   }
 };
