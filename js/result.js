@@ -3,7 +3,7 @@ const init = () => {
   const correctNum = parseInt(localStorage.getItem("correctNum"));
 
   document.getElementById("numer").textContent = correctNum;
-  document.getElementById("denom").textContent = questions.length;
+  document.getElementById("denom").textContent = 20;
 };
 
 const pushReturnButton = () => {
