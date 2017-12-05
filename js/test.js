@@ -1,6 +1,8 @@
 const QUESTION_NUM = 20;
 
 const init = () => {
+  localStorage.setItem("questionNum", QUESTION_NUM);
+
   if (localStorage.getItem("questions") == undefined) {
     location.href = "index.html";
   }
