@@ -15,7 +15,9 @@ const move = (e) => {
   if (e === "outline") {
     location.href = "outline.html";
   } else if (e === "pretest") {
-    localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
+    if (localStorage.getItem("questions") != null || localStorage.getItem("questions") != undefined) {
+      localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
+    }
     location.href = "pretest.html";
   } else if (e === "test") {
     localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
