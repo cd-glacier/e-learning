@@ -2,7 +2,7 @@
 
 右上のclone or downloadからダウンロードして
 
-imgディレクトリ作ってそこに画像を入れて
+imgディレクトリ作ってそこに画像を入れてindex.html開いてみてください
 ```
 mkdir img
 ```
