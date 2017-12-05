@@ -12,10 +12,12 @@ const init = () => {
 }
 
 const move = (e) => {
+  const hoge = localStorage.getItem("questions");
+
   if (e === "outline") {
     location.href = "outline.html";
   } else if (e === "pretest") {
-    if (localStorage.getItem("questions") != null || localStorage.getItem("questions") != undefined) {
+    if (localStorage.getItem("questions") == null || localStorage.getItem("questions") == undefined) {
       localStorage.setItem("questions", JSON.stringify(questions.sort(shuffle)));
     }
     location.href = "pretest.html";
