@@ -26,7 +26,12 @@ const init = () => {
       }
     });
     document.getElementById("commentary-content").textContent = commentary[0].explain;
-    document.getElementById("commentary-image").src = commentary[0].img;
+
+    const img = document.createElement("img");
+    img.setAttribute("id", "commentary-image");
+    img.setAttribute("src", commentary[0].img);
+
+    document.getElementById("commentary-image-div").appendChild(img);
   }
 
 }
