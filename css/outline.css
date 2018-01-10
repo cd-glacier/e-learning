@@ -7,7 +7,7 @@ body {
 #wrapper {
   width: 60%;
   height: 80%;
-  margin: 10% auto 0 auto;
+  margin: 3% auto 0 auto;
 }
 
 #title {
@@ -18,7 +18,8 @@ body {
 }
 
 #elements {
-  margin-top: 30px; 
+  margin-top: 30px;
+  overflow: hidden;
 }
 
 .element {
@@ -30,6 +31,46 @@ body {
 }
 
 #fee {
-  margin: 0 auto;
-  width: 300px;
+  margin:15 auto;
+  width: 215px;
+}
+
+#time {
+  margin:15 auto;
+  width: 210px;
+}
+
+#keyword {
+  margin:15 auto;
+  width: 360px;
+}
+
+#aim {
+  margin:15 auto;
+  width: 325px;
+}
+
+#content {
+  margin:15 auto;
+  width: 465px;
+}
+
+#name {
+  margin:15 auto;
+  width: 400px;
+}
+
+#for {
+  margin:15 auto;
+  width: 535px;
+}
+
+#condition {
+  margin:15 auto;
+  width: 665px;
+}
+
+#creaters {
+  margin:15 auto;
+  width: 690px;
 }
